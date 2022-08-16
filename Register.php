@@ -18,7 +18,7 @@
         $NgaySinh = $_POST['NgaySinh'];
         $GioiTinh = $_POST['GioiTinh'];
 
-        if (!$Username || !$Email || !$SDT || !$DiaChi || !$Password || !$ConfirmPassword || !$NgaySinh || !$GioiTinh)
+        if (!$Username || !$Email || !$SDT || !$Password || !$ConfirmPassword || !$NgaySinh || !$GioiTinh)
         {
             echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="Register.php";</script>' ;
             exit;
