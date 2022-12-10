@@ -104,7 +104,7 @@ isBool = true;
 function showHidden() {
     if (isBool) {
         document.getElementById("password").setAttribute("type", "text");
-        isBool = false;
+        isBool = false; 
     } else {
         document.getElementById("password").setAttribute("type", "password");
         isBool = true;
