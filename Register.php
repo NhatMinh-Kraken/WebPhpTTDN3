@@ -18,7 +18,7 @@
         $NgaySinh = $_POST['NgaySinh'];
         $GioiTinh = $_POST['GioiTinh'];
 
-        if (!$Username || !$Email || !$SDT || !$DiaChi || !$Password || !$ConfirmPassword || !$NgaySinh || !$GioiTinh)
+        if (!$Username || !$Email || !$SDT || !$Password || !$ConfirmPassword || !$NgaySinh || !$GioiTinh)
         {
             echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="Register.php";</script>' ;
             exit;
@@ -45,7 +45,7 @@
         $PassDB = "/^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/ ";
         if(!preg_match($PassDB, $Password))
         {
-            echo '<script> alert("Mật khẩu không đúng đĩnh dạng. Mật khẩu đúng định dạng bao gồm các ký tự sau : ^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$"); window.location="Register.php";</script>';
+            echo '<script> alert("Mật khẩu không đúng đĩnh dạng. Mật khẩu đúng định dạng bao gồm các ký tự sau : Có chữ Hoa, chữ thường, số, ký tự đặt biệt, 8 ký tự trở lên"); window.location="Register.php";</script>';
             exit;
         }
 
